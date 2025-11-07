@@ -5,8 +5,7 @@ metadata:
 spec:
   containers:
   - name: hello-world
-    image: us.icr.io/<my_namespace>/hello-world:1
+    image: hello-world:1
+    imagePullPolicy: Never
     ports:
     - containerPort: 8080
-  imagePullSecrets:
-  - name: icr

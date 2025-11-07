@@ -1,0 +1,20 @@
+# Example terraform.tfvars file
+# Copiez ce fichier vers terraform.tfvars et personnalisez les valeurs
+
+# aws_region         = "eu-west-1"
+# cluster_name       = "mon-cluster-esigelec"
+# kubernetes_version = "1.28"
+# desired_nodes      = 3
+# min_nodes          = 2
+# max_nodes          = 5
+# instance_types     = ["t3.medium"]
+
+# Pour utiliser des instances moins chères (développement uniquement) :
+# instance_types     = ["t3.small"]
+
+# Pour une production avec plus de ressources :
+# instance_types     = ["t3.large"]
+# desired_nodes      = 5
+# min_nodes          = 3
+# max_nodes          = 10
+

@@ -21,8 +21,8 @@ spec:
         run: hello-world
     spec:
       containers:
-      - image: us.icr.io/<my_namespace>/hello-world:1
-        imagePullPolicy: Always
+      - image: hello-world:1
+        imagePullPolicy: Never
         name: hello-world
         ports:
         - containerPort: 8080
@@ -33,9 +33,7 @@ spec:
             memory: 30Mi
           requests:
             cpu: 1m
-            memory: 10Mi   
-      imagePullSecrets:
-      - name: icr
+            memory: 10Mi
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       securityContext: {}
